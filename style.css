@@ -66,7 +66,7 @@ body {
   font-size: 2em;
   color: white;
   margin-left: 20px;
-  /* отступы */
+  /* margins */
 }
 
 .namer {
@@ -107,21 +107,21 @@ body {
   color: rgba(255, 255, 255, 0.85);
   text-align: left;
   display: flex;
-  /* flex добавил*/
+  /* flex added*/
   /* float: left; */
   font-size: 2.36em;
   /* font-weight: bold; */
 }
 
 .emo {
-  /* отступы иконки и миним. ширина для выравнивания */
+  /* margins & icons */
   margin: 10px 0;
   margin-left: 20px;
   min-width: 55px;
 }
 
 .board {
-  /* отступы */
+  /* margins */
   margin: 10px 0;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .postImg {
   display: flex;
-  width: 95vw;
+  width: 64vw; /*make container smaller*/
   justify-content: center;
 }
 
@@ -158,8 +158,12 @@ body {
 }
 
 .right-block {
-  padding: 20px;
+  /*margins & style*/
+  margin-right: 55px;
+  margin-top: 10px;
+  padding-left: 5px;
   width: 0%;
+  display: flex;
 }
 
 .comments p {
@@ -265,10 +269,21 @@ body {
 }
 
 blockquote {
-  /*серая линия и отступ */
+  /*margins*/
   border-left: 3px solid lightgray;
-  padding-left: 10px;
+  margin-left: 10px;
 }
+
+.similar {
+  /*gray line*/
+  border-left: 3px solid lightgray;
+}
+
+.similar li {
+  /*margins between li*/
+  margin-top: 10px;
+}
+
 
 @media screen and (min-width: 700px) {
   h1 {
