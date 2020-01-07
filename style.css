@@ -66,6 +66,7 @@ body {
   font-size: 2em;
   color: white;
   margin-left: 20px;
+  /* отступы */
 }
 
 .namer {
@@ -106,18 +107,21 @@ body {
   color: rgba(255, 255, 255, 0.85);
   text-align: left;
   display: flex;
+  /* flex добавил*/
   /* float: left; */
   font-size: 2.36em;
   /* font-weight: bold; */
 }
 
 .emo {
+  /* отступы иконки и миним. ширина для выравнивания */
   margin: 10px 0;
   margin-left: 20px;
   min-width: 55px;
 }
 
 .board {
+  /* отступы */
   margin: 10px 0;
 }
 
@@ -261,6 +265,7 @@ body {
 }
 
 blockquote {
+  /*серая линия и отступ */
   border-left: 3px solid lightgray;
   padding-left: 10px;
 }
