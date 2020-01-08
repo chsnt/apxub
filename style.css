@@ -340,6 +340,7 @@ blockquote {
   .comments {
     width: 95%;
   }
+ 
 }
 
 @media screen and (max-width: 900px) {
@@ -348,15 +349,6 @@ blockquote {
   }
   .head-title>h1 {
     font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .namer, .subr {
-    font-size: 2em;
-  }
-  .head-title>h1 {
-    font-size: 24px;
   }
 }
 
@@ -382,6 +374,18 @@ blockquote {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .namer, .subr {
+    font-size: 2em;
+  }
+  .head-title>h1 {
+    font-size: 24px;
+  }
+  .comment_info .datetime {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .wrapper-header {
     padding: 0 10px;
@@ -400,7 +404,7 @@ blockquote {
   .left-block, .right-block {
     padding: 10px;
   }
-  .comment_info .datetime, .post_info .datetime {
+  .comment_info .datetime {
     display: none;
   }
 }
