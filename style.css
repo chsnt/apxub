@@ -134,11 +134,9 @@ body {
   padding: 20px;
 }
 
-
 .postImg {
   display: flex;
-  width: 64vw;
-  /*make container smaller*/
+  width: 64vw; /*make container smaller*/
   justify-content: center;
 }
 
@@ -288,6 +286,7 @@ blockquote {
   margin-top: 10px;
 }
 
+
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 32px;
@@ -358,8 +357,7 @@ blockquote {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  /*move artivles to bottom at 1200px width*/
+@media screen and (max-width: 710px) {
   .head-row {
     flex-direction: column;
     height: 100%;
@@ -397,5 +395,11 @@ blockquote {
   }
   .left-block, .right-block {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .head-board{
+    padding: 5px 0;
   }
 }
