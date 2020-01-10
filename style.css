@@ -389,9 +389,7 @@ blockquote {
   .left-block, .right-block {
     padding: 10px;
   }
-  .comment_info .datetime {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 1440px){
