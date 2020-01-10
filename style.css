@@ -198,9 +198,10 @@ body {
 }
 
 .post_info {
-  padding-left: 80px;
+
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 75%;
 }
 
 .comment_info:first-child {
@@ -337,6 +338,9 @@ blockquote {
     width: 95%;
   }
 
+  .post_info {
+    width: 95%;
+  }
 
   /*move artivles to bottom at 1200px width*/
   .head-row {
