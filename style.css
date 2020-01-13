@@ -198,9 +198,10 @@ body {
 }
 
 .post_info {
-  padding-left: 80px;
+  /*padding-left: 80px;*/
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 75%;
 }
 
 .comment_info:first-child {
@@ -325,7 +326,10 @@ blockquote {
   .comments {
     width: 95%;
   }
- 
+  .post_info {
+    width: 95%;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
