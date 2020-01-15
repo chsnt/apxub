@@ -40,7 +40,7 @@ body {
   border: 0.5rem solid;
   display: flex;
   align-items: center;
-  padding: 30px 0;
+  padding: 5px 0; /* padding: 30px 0; */
 }
 
 .head-row {
@@ -84,23 +84,6 @@ body {
   color: rgba(255, 255, 255, 0.85);
   border-color: rgba(255, 255, 255, 0.85);
   border: 0.23rem solid;
-  /* text-shadow: 
-  -0   -1px 1px rgba(255, 255, 255, 0.85),
-   0   -1px 1px rgba(255, 255, 255, 0.85),
-  -0    1px 1px rgba(255, 255, 255, 0.85),
-   0    1px 1px rgba(255, 255, 255, 0.85),
-  -1px -0   1px rgba(255, 255, 255, 0.85),
-   1px -0   1px rgba(255, 255, 255, 0.85),
-  -1px  0   1px rgba(255, 255, 255, 0.85),
-   1px  0   1px rgba(255, 255, 255, 0.85),
-  -1px -1px 1px rgba(255, 255, 255, 0.85),
-   1px -1px 1px rgba(255, 255, 255, 0.85),
-  -1px  1px 1px rgba(255, 255, 255, 0.85),
-   1px  1px 1px rgba(255, 255, 255, 0.85),
-  -1px -1px 1px rgba(255, 255, 255, 0.85),
-   1px -1px 1px rgba(255, 255, 255, 0.85),
-  -1px  1px 1px rgba(255, 255, 255, 0.85),
-   1px  1px 1px rgba(255, 255, 255, 0.85); */
 }
 
 .subr {
@@ -211,12 +194,14 @@ body {
 .comment_info, .post_info {
   display: inline-flex;
   padding: 3px;
+  width: 100%;
 }
 
 .post_info {
-  padding-left: 80px;
+  /*padding-left: 80px;*/
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 75%;
 }
 
 .comment_info:first-child {
@@ -238,6 +223,7 @@ body {
 .comment_info .datetime, .post_info .datetime {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.85);
+  margin-left: auto;
 }
 
 .content .md a {
@@ -272,8 +258,10 @@ body {
 
 blockquote {
   /*margins*/
-  border-left: 3px solid lightgray;
+  border-left: 4px solid lightgray;
   margin-left: 10px;
+  padding-left: 10px;
+
 }
 
 .similar {
@@ -316,6 +304,8 @@ blockquote {
   }
 }
 
+
+
 @media screen and (min-width: 1200px) {
   .postImg img {
     max-width: 62%;
@@ -336,6 +326,10 @@ blockquote {
   .comments {
     width: 95%;
   }
+  .post_info {
+    width: 95%;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -344,15 +338,6 @@ blockquote {
   }
   .head-title>h1 {
     font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .namer, .subr {
-    font-size: 2em;
-  }
-  .head-title>h1 {
-    font-size: 24px;
   }
 }
 
@@ -378,6 +363,18 @@ blockquote {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .namer, .subr {
+    font-size: 2em;
+  }
+  .head-title>h1 {
+    font-size: 24px;
+  }
+  .comment_info .datetime {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .wrapper-header {
     padding: 0 10px;
@@ -395,5 +392,14 @@ blockquote {
   }
   .left-block, .right-block {
     padding: 10px;
+  }
+  .comment_info .datetime {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .head-board{
+    padding: 5px 0;
   }
 }
