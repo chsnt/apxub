@@ -40,7 +40,8 @@ body {
   border: 0.5rem solid;
   display: flex;
   align-items: center;
-  padding: 5px 0; /* padding: 30px 0; */
+  padding: 5px 0; 
+  /* padding: 30px 0; */
 }
 
 .head-row {
@@ -109,6 +110,7 @@ body {
 }
 
 .post {
+  width: 75%;
   font-size: 18px;
   padding-bottom: 2rem;
   padding-top: 0.62rem;
@@ -116,7 +118,6 @@ body {
   border-radius: 5px;
   padding: 20px;
 }
-
 
 .postImg {
   display: flex;
@@ -198,9 +199,10 @@ body {
 }
 
 .post_info {
-  padding-left: 80px;
+
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 75%;
 }
 
 .comment_info:first-child {
@@ -260,7 +262,6 @@ blockquote {
   border-left: 4px solid lightgray;
   margin-left: 10px;
   padding-left: 10px;
-
 }
 
 .similar {
@@ -303,30 +304,19 @@ blockquote {
   }
 }
 
-
-
 @media screen and (min-width: 1200px) {
   .postImg img {
     max-width: 62%;
     height: auto;
     max-height: 62%
   }
-  .comments {
+  .comments, .post {
     width: 75%;
   }
+
 }
 
-@media screen and (max-width: 1200px) {
-  .postImg img {
-    max-width: 95%;
-    height: auto;
-    max-height: 95%
-  }
-  .comments {
-    width: 95%;
-  }
- 
-}
+
 
 @media screen and (max-width: 900px) {
   .content {
@@ -338,6 +328,17 @@ blockquote {
 }
 
 @media screen and (max-width: 1200px) {
+  .postImg img {
+    max-width: 95%;
+    height: auto;
+    max-height: 95%
+  }
+  .comments, .post {
+    width: 95%;
+  }
+  .post_info {
+    width: 95%;
+  }
   /*move artivles to bottom at 1200px width*/
   .head-row {
     flex-direction: column;
@@ -389,13 +390,19 @@ blockquote {
   .left-block, .right-block {
     padding: 10px;
   }
-  .comment_info .datetime {
-    display: none;
-  }
+
 }
 
-@media screen and (max-width: 1440px){
-  .head-board{
+@media screen and (max-width: 1440px) {
+  .head-board {
     padding: 5px 0;
   }
+ .postImg div {
+   min-width: 600px;
+ } 
+ .postImg img {
+   /*img align*/
+   margin: auto;
+   display: flex;
+ }
 }
