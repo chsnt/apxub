@@ -40,7 +40,11 @@ body {
   border: 0.5rem solid;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
+  padding: 5px 0;
+=======
   padding: 5px 0; 
+>>>>>>> 0315e6f9d6ba30f764ad4fb0401b5ee4820c6e19
   /* padding: 30px 0; */
 }
 
@@ -121,16 +125,14 @@ body {
 
 .postImg {
   display: flex;
-  width: 64vw;
+  width: 46vw;
   /*make container smaller*/
   justify-content: center;
 }
 
 .postImg img {
   justify-content: center;
-  max-width: 95%;
-  height: auto;
-  max-height: 95%
+  max-width: 400px;
 }
 
 .left-block {
@@ -199,7 +201,10 @@ body {
 }
 
 .post_info {
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0315e6f9d6ba30f764ad4fb0401b5ee4820c6e19
   padding-top: 20px;
   padding-bottom: 20px;
   width: 75%;
@@ -274,36 +279,19 @@ blockquote {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 700px) {
-  h1 {
-    font-size: 32px;
-  }
+footer {
+  height: 150px;
+  background: black;
+  text-align: center;
+  color: wheat;
+  padding-top: 15px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 699px) {
-  h1 {
-    font-size: 27px;
-  }
-}
-
-@media screen and (max-width: 599px) {
-  h1 {
-    font-size: 25px;
-  }
-  .comment_info div {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  h1 {
-    font-size: 8vw;
-  }
-  .comment_info div {
-    font-size: 1rem;
-  }
-}
-
+<<<<<<< HEAD
+@media screen and (max-width: 1440px) {
+  .head-board {
+    padding: 5px 0;
+=======
 @media screen and (min-width: 1200px) {
   .postImg img {
     max-width: 62%;
@@ -312,21 +300,45 @@ blockquote {
   }
   .comments, .post {
     width: 75%;
+>>>>>>> 0315e6f9d6ba30f764ad4fb0401b5ee4820c6e19
   }
 
+<<<<<<< HEAD
+@media screen and (max-width: 1200px) {
+  .postImg img {
+    margin-left: 35%;
+  }
+  .comments, .post {
+    width: 90%;
+  }
+  .post_info {
+    width: 90%;
+  }
+  /*move articles to bottom at 1200px width*/
+=======
 }
 
 
 
 @media screen and (max-width: 900px) {
+>>>>>>> 0315e6f9d6ba30f764ad4fb0401b5ee4820c6e19
   .content {
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 100%;
   }
-  .head-title>h1 {
-    font-size: 28px;
+  .head-board {
+    padding: 10px 0;
+  }
+  .right-block {
+    margin-left: 7%;
   }
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 1000px) {
+  .sign, .namer, .subr {
+    font-size: 2em;
+  }
+=======
 @media screen and (max-width: 1200px) {
   .postImg img {
     max-width: 95%;
@@ -340,6 +352,7 @@ blockquote {
     width: 95%;
   }
   /*move artivles to bottom at 1200px width*/
+>>>>>>> 0315e6f9d6ba30f764ad4fb0401b5ee4820c6e19
   .head-row {
     flex-direction: column;
     height: 100%;
@@ -348,21 +361,11 @@ blockquote {
     align-items: flex-start;
     padding: 0 10px;
   }
-  .sign, .namer, .subr {
-    font-size: 28px;
-  }
-  .content {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
-  }
-  .head-board {
-    padding: 10px 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .namer, .subr {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .head-title>h1 {
     font-size: 24px;
@@ -370,9 +373,21 @@ blockquote {
   .comment_info .datetime {
     display: none;
   }
+  .postImg img {
+    max-width: 300px;
+  }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
+  .postImg img {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .postImg img {
+    max-width: 100%;
+  }
   .wrapper-header {
     padding: 0 10px;
   }
@@ -390,12 +405,23 @@ blockquote {
   .left-block, .right-block {
     padding: 10px;
   }
+<<<<<<< HEAD
+  .sign, .namer, .subr {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .comment_info div {
+    font-size: 1rem;
+=======
 
 }
 
 @media screen and (max-width: 1440px) {
   .head-board {
     padding: 5px 0;
+>>>>>>> 0315e6f9d6ba30f764ad4fb0401b5ee4820c6e19
   }
  .postImg div {
    min-width: 600px;
