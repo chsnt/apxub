@@ -271,11 +271,12 @@ blockquote {
 }
 
 footer {
-  height: 150px;
-  background: black;
+  height: 60px;
+  background: rgb(22, 11, 7);
   text-align: center;
-  color: wheat;
-  padding-top: 15px;
+  color: lightgray;
+  /* padding-top: 15px; */
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 1440px) {
