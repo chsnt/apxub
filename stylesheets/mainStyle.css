@@ -87,12 +87,11 @@ body {
 }
 
 .subr {
-  color: rgba(255, 255, 255, 0.85);
   text-align: left;
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
-  height: 25px;
+  height: 20px;
 }
 
 .subr p {
