@@ -89,14 +89,18 @@ body {
 .subr {
   color: rgba(255, 255, 255, 0.85);
   text-align: left;
-  display: flex;
-  /* flex added*/
-  /* float: left; */
-  font-size: 2.36em;
-  /* font-weight: bold; */
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
+  height: 25px;
+}
+
+.subr p {
+  display: none;
+}
+
+.subr a {
+  padding-right: 5px;
 }
 
 .emo {
