@@ -280,6 +280,17 @@ footer {
   margin-top: 15px;
 }
 
+.email{
+  font-size: x-large;
+  position: relative;
+  top: 38%;
+  justify-content: center;
+}
+
+.email a{
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
   .postImg img {
     margin-left: 35%;
