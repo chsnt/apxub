@@ -34,6 +34,12 @@ body {
   background-color: rgb(131, 72, 41);
 } */
 
+.head-board a {
+    text-decoration: none;
+    /* Убирает подчеркивание для ссылок */
+    color: rgba(255, 255, 255, 0.85);
+}
+
 .head-board {
     color: #f68e56;
     border-color: white;
@@ -41,11 +47,6 @@ body {
     display: flex;
     align-items: center;
     padding: 5px 0;
-}
-
-.head-board a {
-    text-decoration: none; /* Убирает подчеркивание для ссылок */
-    color: rgba(255, 255, 255, 0.85);
 }
 
 .head-row {
@@ -58,6 +59,9 @@ body {
 .head-title {
     line-height: 30px;
     color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(231, 207, 194, 0.38);
+    border: 0.5rem solid;
+
 }
 
 .content {
@@ -86,6 +90,10 @@ body {
 .subr:hover,
 .head-board a:hover {
     color: rgba(255, 255, 255, 0.98);
+}
+
+.right-block .top {
+    display: none;
 }
 
 .namer u {
@@ -210,6 +218,12 @@ body {
     width: 75%;
 }
 
+.social {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 .comment_info:first-child {
     margin-right: auto;
 }
@@ -289,6 +303,17 @@ footer {
     color: lightgray;
     /* padding-top: 15px; */
     margin-top: 15px;
+}
+
+.email {
+    font-size: x-large;
+    position: relative;
+    top: 38%;
+    justify-content: center;
+}
+
+.email a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
