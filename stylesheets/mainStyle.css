@@ -13,7 +13,6 @@ body {
   font-weight: 400;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0;
-
 }
 
 .wrapper-header {
@@ -21,8 +20,7 @@ body {
   width: 100%;
   background-color: #f68e56;
   /* box-shadow: 0 -80px 210px rgba(32, 12, 2, 0.7) inset; */
-  box-shadow: 0 -80px 210px rgba(32, 12, 2, 0.7) inset,
-    -2px 8px 8px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -80px 210px rgba(32, 12, 2, 0.7) inset, -2px 8px 8px -2px rgba(0, 0, 0, 0.2);
   padding: 20px 80px;
   padding-bottom: 32px;
   display: grid;
@@ -48,9 +46,10 @@ body {
 }
 
 .head-board a {
-  text-decoration: none; /* Убирает подчеркивание для ссылок */
+  text-decoration: none;
+  /* Убирает подчеркивание для ссылок */
   color: rgba(255, 255, 255, 0.85);
- }
+}
 
 .head-row {
   color: #f68e56;
@@ -89,9 +88,7 @@ h1 {
   color: lightgray;
 }
 
-.namer:hover,
-.subr:hover,
-.head-board a:hover {
+.namer:hover, .subr:hover, .head-board a:hover {
   color: rgba(255, 255, 255, 0.98);
 }
 
@@ -179,6 +176,15 @@ h1 {
   hyphens: auto;
 }
 
+.comments a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
 .comments {
   width: 75%;
   padding: 40px;
@@ -210,8 +216,7 @@ h1 {
   border-top: 1px solid rgba(221, 221, 221, 0.85);
 }
 
-.comment_info,
-.post_info {
+.comment_info, .post_info {
   display: inline-flex;
   padding: 3px;
   width: 100%;
@@ -227,9 +232,7 @@ h1 {
   margin-right: auto;
 }
 
-.comment_info div,
-.post_info div,
-.post_info a {
+.comment_info div, .post_info div, .post_info a {
   padding: 3px;
   /* padding-right: 3px; */
   font-weight: bold;
@@ -241,8 +244,7 @@ h1 {
   font-weight: bold;
 }
 
-.comment_info .datetime,
-.post_info .datetime {
+.comment_info .datetime, .post_info .datetime {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.85);
   margin-left: auto;
@@ -297,10 +299,13 @@ blockquote {
 
 footer {
   height: 60px;
+  width: 100%;
   background: rgb(22, 11, 7);
   text-align: center;
   color: lightgray;
-  margin-top: 350px;
+  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
 }
 
 .boards {
@@ -347,54 +352,48 @@ footer {
   text-decoration: none;
 }
 
+body h1 {
+  text-align: center;
+  line-height: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media screen and (max-width: 1440px) {
   .head-board {
     padding: 5px 0;
   }
-
   @media screen and (max-width: 1200px) {
     .postImg img {
       margin-left: 35%;
     }
-
-    .comments,
-    .post {
+    .comments, .post {
       width: 90%;
     }
-
     .post_info {
       width: 90%;
     }
-
     /*move articles to bottom at 1200px width*/
     .content {
       grid-template-columns: 100%;
     }
-
     .head-board {
       padding: 10px 0;
     }
-
     .right-block {
       margin-left: 7%;
     }
   }
-
   @media screen and (max-width: 1000px) {
-
-    .sign,
-    .namer {
+    .sign, .namer {
       font-size: 2em;
     }
-
     .boards {
       width: 90%;
     }
-
     .boards>div {
       margin: 15px;
     }
-
     .head-row {
       flex-direction: column;
       height: 100%;
@@ -404,84 +403,74 @@ footer {
       padding: 0 10px;
     }
   }
-
   @media screen and (max-width: 768px) {
     .namer {
       font-size: 1.8em;
     }
-
     .head-title>h1 {
       font-size: 24px;
     }
-
     .comment_info .datetime {
       display: none;
     }
-
     .postImg img {
       max-width: 300px;
     }
   }
-
   @media screen and (max-width: 600px) {
     .postImg img {
       max-width: 250px;
     }
+    body h1 {
+      font-size: 1.3rem;
+    }
   }
-
   @media screen and (max-width: 455px) {
     .postImg img {
       max-width: 100%;
     }
-
     .wrapper-header {
       padding: 0 10px;
     }
-
     .head-title {
       font-size: 20px;
     }
-
-    .post_info,
-    .comment_info {
+    .post_info, .comment_info {
       display: flex;
       flex-direction: column;
       padding-left: 0;
     }
-
-    .post,
-    .comments {
+    .post, .comments {
       padding: 10px;
     }
-
-    .left-block,
-    .right-block {
+    .left-block, .right-block {
       padding: 10px;
     }
-
-    .sign,
-    .namer {
+    .sign, .namer {
       font-size: 1.5em;
     }
-
     .boards {
       width: 95%;
     }
-
     .boards>div {
       margin: 10px;
     }
+    body h1 {
+      text-align: center;
+      line-height: 1em;
+    }
+    body h1 {
+      text-align: center;
+      line-height: 1em;
+    }
   }
-
   @media screen and (max-width: 320px) {
     .comment_info div {
       font-size: 1rem;
     }
-
     .postImg div {
       min-width: 600px;
     }
-
     .postImg img {
       /*img align*/
       margin: auto;
@@ -502,6 +491,6 @@ footer {
   color: white;
 }
 
-.catalog div a:active{
+.catalog div a:active {
   background-color: #f68e56;
 }
