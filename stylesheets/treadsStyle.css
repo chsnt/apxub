@@ -13,6 +13,9 @@ body {
     font-weight: 400;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .wrapper-header {
@@ -65,7 +68,7 @@ body {
     box-shadow: -2px 8px 8px -2px rgba(0, 0, 0, 0.2) inset;
     -webkit-box-shadow: -2px 8px 8px -2px rgba(0, 0, 0, 0.2) inset;
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 70% 15%;
     justify-content: flex-end;
 }
 
@@ -292,9 +295,11 @@ footer {
     background: rgb(22, 11, 7);
     text-align: center;
     color: lightgray;
-    margin-top: 100px;
-    position: absolute;
-    bottom: 0;
+    flex-shrink: 0;
+}
+
+.wrapper {
+    flex: 1 0 auto;
 }
 
 .email {
@@ -320,6 +325,7 @@ footer {
     margin: 10px;
     display: flex;
     height: 100px;
+    overflow: hidden;
 }
 
 .tread .score {
@@ -337,10 +343,37 @@ footer {
     position: absolute;
     margin-top: 70px;
     right: 120px;
+    padding-right: 5px;
 }
 
 .tread>.tread {
     margin-top: 25px;
+}
+
+.pagination ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.pagination li {
+    border: 1px solid gray;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.pagination li:hover {
+    background-color: #f68e56;
+}
+
+li.active {
+    background-color: #f68e56;
+    color: white;
 }
 
 @media screen and (max-width: 1200px) {
@@ -358,6 +391,10 @@ footer {
     }
     .right-block {
         margin-left: 7%;
+    }
+    .tread>.tread {
+        font-size: 0.8em;
+        margin-top: 10px;
     }
 }
 
@@ -385,17 +422,27 @@ footer {
     .postImg img {
         max-width: 300px;
     }
+    .tread .date {
+        visibility: hidden;
+    }
+    .tread .score {
+        font-size: 1.5em;
+        margin: auto 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .postImg img {
         max-width: 250px;
     }
+    .tread>.tread {
+        font-size: 0.7em;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 512px) {
     .wrapper-header {
-        padding: 0 10px;
+        padding: 10px;
     }
     .postImg img {
         max-width: 100%;

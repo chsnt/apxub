@@ -13,6 +13,9 @@ body {
     font-weight: 400;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .wrapper-header {
@@ -67,7 +70,7 @@ body {
     box-shadow: -2px 8px 8px -2px rgba(0, 0, 0, 0.2) inset;
     -webkit-box-shadow: -2px 8px 8px -2px rgba(0, 0, 0, 0.2) inset;
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 70% 15%;
     justify-content: flex-end;
 }
 
@@ -304,9 +307,11 @@ footer {
     background: rgb(22, 11, 7);
     text-align: center;
     color: lightgray;
-    margin-top: 100px;
-    position: absolute;
-    bottom: 0;
+    flex-shrink: 0;
+}
+
+.wrapper {
+    flex: 1 0 auto;
 }
 
 .email {
@@ -367,9 +372,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 512px) {
     .wrapper-header {
-        padding: 0 10px;
+        padding: 10px;
     }
     .postImg img {
         max-width: 100%;
